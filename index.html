@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="about.html" >About</a>
+            <a href="contact.html">Contact</a>
+
+          <div id="searchbar">
+            <label for="search">Search</label>
+            <input type="search" id="search"></input>
+            <button aria-label="search">Search</button>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <section id="resources" aria-label="resources">
+        <h1>Resources</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id sem mi. Aliquam molestie massa odio, eget porttitor magna scelerisque sit amet.
+           Quisque sit amet sapien non lorem vehicula varius consectetur maximus erat. Aenean at nulla tristique, commodo lorem at, efficitur justo.
+           Nulla mollis convallis molestie. Phasellus vel nunc faucibus, sodales sem ut, dignissim ligula. Vestibulum ac feugiat metus.
+           Maecenas varius dapibus nunc, posuere ultricies urna ultrices non. Proin posuere orci et ornare mollis. Proin posuere orci et ornare mollis.
+           Nam iaculis tristique ex, in convallis erat malesuada in. Suspendisse potenti. Nulla facilisi. Ut vitae hendrerit augue, eu sollicitudin est.</p>
+          <ul>
+           <li>This is a very useful tip</li>
+           <li>An excellent resource</li>
+           <li>I recommend x, y and z</li>
+           <li>I do not recommend a, b and c</li>
+          </ul>
+      </section>
+      <section id="workshop" aria-label="signup section">
+    <h1>Sign up for our workshop!</h1>
+    <img src="/workshop.jpg" alt="Woman placing note on a whiteboard in front of her workshop team">
+     <!-- Here I am using "for" and "id"to give elements an accessible name for screen readers.
+      That way we don't need a specific aria label-->
+    <div id="signup" role="form">
+    <label for="name">Name</label>
+    <input type="text" id="name"></input>
+      <br>
+    <label for="email">Email</label>
+    <input type="text" id="email"></input>
+      <br>
+    <label for="company">Company or school</label>
+    <input type="text" id="company"></input>
+      </div>
+      <button aria-label="sign me up">Sign me up</button>
+      </section>
+</main>
+
+<footer>
+  <div aria-label="address">
+    <p>Laugavegur 29, <br> 105 Reykjavík</p>
+  </div>
+  <div aria-label="phone">
+    <p>Phone: 555-6666</p>
+    <div aria-label="email">
+      <a href="mailto:emailus@email.com">emailus@email.com</a>
+  </div>
+
+</footer>
+  </body>
+</html>
